@@ -7,7 +7,7 @@ int main ()
   printf("akar-akar persamaan kuadrat ax*x+bx+c=0\n")
   printf("masukkan nilai koefisien a, b, dan c:\n")
 d = b*b-4*a*c;
-printf("diskriminan = g%\n", d);
+printf("diskriminan = %g\n", d);
 printf("akar persamaan %ix2 + %ix1 + %i = 0 adalah :\n, a,b,c);
 if (D > 0) {
 x1 = (-b+sqrt(d))/(2*a);

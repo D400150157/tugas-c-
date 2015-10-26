@@ -1,23 +1,35 @@
-#include "stdio.h"
-#include "math.h"
-int main ()
-{
-  int a = 2,b = 3,c = 5;
-  float d, x1, x2, x;
-  printf("akar-akar persamaan kuadrat ax*x+bx+c=0\n")
-  printf("masukkan nilai koefisien a, b, dan c:\n")
-d = b*b-4*a*c;
-printf("diskriminan = %g\n", d);
-printf("akar persamaan %ix2 + %ix1 + %i = 0 adalah :\n, a,b,c);
-if (D > 0) {
-x1 = (-b+sqrt(d))/(2*a);
-x2 = (-b=sqrt(d))/(2*a);
-printf("x1 = %g\n", x1);
-printf("x2 = %g\n", x2);
-}
-else if (d == 0) {
-x = -b/(2*a);
-printf("x1 = x2 = %g\n, x);
-}
-return 0;
-}
+#include <stdio.h>
+ #include <conio.h>
+ #include <math.h>
+ main()
+ {
+ float a,b,c,D,x,x1,x2;
+ printf(" Tugas Code Blocks\n");
+ printf(" Mencari Akar Persamaan Kuadrat\n");
+ printf(" Dari Bentuk Persamaan Ax^2 + Bx + C = 0\n");
+ printf("\n");
+ printf(" Nama	: Izzul Fikri \n");
+ printf(" NIM	: D400150157  \n");
+ printf(" Kelas	: E  \n");
+ printf("\n");
+ printf("   Masukan Nilai Koefisien A = ");scanf("%f",&a);
+ printf("   Masukan Nilai Koefisien B = ");scanf("%f",&b);
+ printf("   Masukan Nilai Koefisien C = ");scanf("%f",&c);
+ D = (b*b)-(4*a*c);
+ printf(" Determinan = %2.2f\n",D);
+ if (D>0)
+     {x1=((-b+sqrt(D))/(2*a));
+         printf(" X1 = %2.2f\n",x1);
+      x2=((-b-sqrt(D))/(2*a));
+         printf(" X2 = %2.2f\n",x2);}
+ else if(D==0)
+     {x= -b/(2*a);
+         printf(" X1 = X2 = %2.2f\n",x);}
+ else if(D<0)
+     {x1=((-b/2*a)+ ((sqrt(-D))/2*a));
+         printf(" X1 = %2.2f\n",x1);
+      x2=((-b/2*a)-((sqrt(-D) )/2*a));
+         printf(" X2 = %2.2f\n",x2);
+         printf(" Adalah Bilangan Imajiner \n");}
+ getch();
+ }
